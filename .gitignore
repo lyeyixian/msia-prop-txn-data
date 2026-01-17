@@ -1,0 +1,22 @@
+# .NET Core
+bin/
+obj/
+
+# .NET Core Tools
+*.dotnet/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# IDE
+.vs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

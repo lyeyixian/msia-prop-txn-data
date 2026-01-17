@@ -1,0 +1,6 @@
+@MsiaPropertyTransaction_HostAddress = http://localhost:5028
+
+GET {{MsiaPropertyTransaction_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
