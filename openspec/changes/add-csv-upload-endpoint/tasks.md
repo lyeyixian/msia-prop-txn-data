@@ -10,10 +10,10 @@
 - [x] 2.4 Implement validation logic in MsiaPropertyTransaction/Services/ for dates, numerics, and string formats
 
 ## 3. Database Insertion Logic (TDD)
-- [ ] 3.1 Write integration tests for data insertion with nullable fields
-- [ ] 3.2 Implement database insertion functions in MsiaPropertyTransaction/Services/ with batch processing for large files
-- [ ] 3.3 Write tests for error handling during insertion
-- [ ] 3.4 Implement error handling and transaction rollback logic in MsiaPropertyTransaction/Services/
+- [x] 3.1 Write integration tests for data insertion with nullable fields
+- [x] 3.2 Implement database insertion functions in MsiaPropertyTransaction/Services/ with batch processing for large files
+- [x] 3.3 Write tests for error handling during insertion
+- [x] 3.4 Implement error handling and transaction rollback logic in MsiaPropertyTransaction/Services/
 
 ## 4. API Endpoint (TDD)
 - [ ] 4.1 Write integration tests for CSV upload endpoint
