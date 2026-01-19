@@ -11,7 +11,7 @@ To enable users to upload CSV files containing property transaction data and aut
 - All requirements implemented following Test-Driven Development principles
 
 ## Technical Details
-- Tech stack: .NET 10 (C#), PostgreSQL database
+- Tech stack: .NET 10 (C#), PostgreSQL database, CsvHelper library for CSV parsing
 - CSV columns: Property Type, District, Mukim, Scheme Name/Area, Road Name, Month Year of Transaction Date, Tenure, Land/Parcel Area, Unit, Main Floor Area, Unit Level, Transaction Price, Property Type (strata), Sector, State, Transaction Price, Land Area, Main Floor Area, Transaction Date, Unit 1
 - DB column names: snake_case convention (e.g., property_type, transaction_price)
 - Data types: strings (nullable where specified), numerics (up to hundred millions for prices), dates (dd/mm/yyyy format)

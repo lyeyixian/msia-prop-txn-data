@@ -4,10 +4,10 @@
 - [x] 1.3 Run tests to verify schema creation
 
 ## 2. CSV Parsing and Validation (TDD)
-- [ ] 2.1 Write unit tests in MsiaPropertyTransaction.Tests/ for CSV parsing with duplicate column resolution
-- [ ] 2.2 Implement CSV parsing utilities in MsiaPropertyTransaction/Services/ that select preferred columns from duplicates
-- [ ] 2.3 Write unit tests for data validation rules on stored columns (data types, required fields)
-- [ ] 2.4 Implement validation logic in MsiaPropertyTransaction/Services/ for dates, numerics, and string formats
+- [x] 2.1 Write unit tests in MsiaPropertyTransaction.Tests/ for CSV parsing with duplicate column resolution using CsvHelper
+- [x] 2.2 Implement CSV parsing utilities in MsiaPropertyTransaction/Services/ using CsvHelper that select preferred columns from duplicates
+- [x] 2.3 Write unit tests for data validation rules on stored columns (data types, required fields)
+- [x] 2.4 Implement validation logic in MsiaPropertyTransaction/Services/ for dates, numerics, and string formats
 
 ## 3. Database Insertion Logic (TDD)
 - [ ] 3.1 Write integration tests for data insertion with nullable fields

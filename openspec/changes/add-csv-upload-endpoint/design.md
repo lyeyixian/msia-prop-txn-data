@@ -1,5 +1,5 @@
 ## Context
-The CSV upload feature is designed to handle property transaction data from Malaysian sources. The expected CSV format includes specific columns for property details, transaction information, and location data. Built using .NET 10 (C#) with PostgreSQL database in the MsiaPropertyTransaction/ project.
+The CSV upload feature is designed to handle property transaction data from Malaysian sources. The expected CSV format includes specific columns for property details, transaction information, and location data. Built using .NET 10 (C#) with PostgreSQL database and CsvHelper library for robust CSV parsing in the MsiaPropertyTransaction/ project.
 
 ## Goals / Non-Goals
 - Goals: Accurately parse and store CSV data (~200 MB files) with the specified columns, validate data integrity, handle nullable fields appropriately
