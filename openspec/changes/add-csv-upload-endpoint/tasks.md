@@ -1,7 +1,7 @@
 ## 1. Database Schema (TDD)
-- [ ] 1.1 Write tests in MsiaPropertyTransaction.Tests/ for database table structure with snake_case column names and constraints
-- [ ] 1.2 Create database migration scripts in MsiaPropertyTransaction/Migrations/ to define schema with conventional column names
-- [ ] 1.3 Run tests to verify schema creation
+- [x] 1.1 Write tests for database table structure with snake_case column names and constraints
+- [x] 1.2 Create database migration scripts to define schema with conventional column names
+- [x] 1.3 Run tests to verify schema creation
 
 ## 2. CSV Parsing and Validation (TDD)
 - [ ] 2.1 Write unit tests in MsiaPropertyTransaction.Tests/ for CSV parsing with duplicate column resolution
