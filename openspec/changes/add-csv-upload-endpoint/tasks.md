@@ -16,10 +16,10 @@
 - [x] 3.4 Implement error handling and transaction rollback logic in MsiaPropertyTransaction/Services/
 
 ## 4. API Endpoint (TDD)
-- [ ] 4.1 Write integration tests for CSV upload endpoint
-- [ ] 4.2 Implement Minimal API endpoint handler in MsiaPropertyTransaction/Program.cs
-- [ ] 4.3 Write tests for request validation and file handling
-- [ ] 4.4 Implement request validation and response formatting in MsiaPropertyTransaction/Program.cs
+- [x] 4.1 Write integration tests for CSV upload endpoint
+- [x] 4.2 Implement Minimal API endpoint handler in MsiaPropertyTransaction/Program.cs
+- [x] 4.3 Write tests for request validation and file handling
+- [x] 4.4 Implement request validation and response formatting in MsiaPropertyTransaction/Program.cs
 
 ## 5. End-to-End Testing
 - [ ] 5.1 Write end-to-end tests for complete CSV upload flow
