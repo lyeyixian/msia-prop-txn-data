@@ -33,9 +33,10 @@ public class CustomWebApplicationFactory<TProgram>
                 services.Remove(dbConnectionDescriptor);
             }
 
-            // Add in-memory database for testing
+            // Add unique in-memory database for each test
+            var databaseName = $"TestDb_{Guid.NewGuid()}";
             services.AddDbContext<AppDbContext>(options =>
-                options.UseInMemoryDatabase("TestDb_CsvUpload"));
+                options.UseInMemoryDatabase(databaseName));
         });
     }
 }
