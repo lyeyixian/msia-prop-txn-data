@@ -1,4 +1,7 @@
-# Change: Add CSV Upload Endpoint
+# Change: Add CSV Upload Endpoint (ARCHIVED)
+
+## Status: ✅ COMPLETED
+**Archived on:** 2026-01-21
 
 ## Why
 To enable users to upload CSV files containing property transaction data and automatically store it in the PostgreSQL database for further analysis and processing.
