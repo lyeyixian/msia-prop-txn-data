@@ -9,6 +9,30 @@ schema: spec-driven
 #     We use conventional commits
 #     Domain: e-commerce platform
 
+context: |
+  Tech Stack:
+  - .NET 10
+  - ASP.NET Core
+  - Entity Framework Core
+  - Docker (for PostgreSQL database)
+
+  Architecture:
+  - Clean Architecture
+  - Test-Driven Development (TDD)
+  - Standard .NET naming conventions (PascalCase for classes/methods, camelCase for parameters/variables)
+
+  Domain:
+  - Malaysian Property Transaction Data System
+  - Source: Malaysia National Property Information Centre (NAPIC) web portal - https://napic.jpph.gov.my/
+  - Extracts data from Tableau exports, stores in PostgreSQL database
+  - Provides web interface for data analysis and visualization
+  - Currently government portal data is hard to access/analyze
+
+  Testing:
+  - Unit tests in MsiaPropertyTransaction.Tests project
+  - Integration tests for database operations
+  - TDD approach - write tests first, then implementation
+
 # Per-artifact rules (optional)
 # Add custom rules for specific artifacts.
 # Example:
@@ -18,3 +42,24 @@ schema: spec-driven
 #       - Always include a "Non-goals" section
 #     tasks:
 #       - Break tasks into chunks of max 2 hours
+
+rules:
+  proposal:
+    - Include clarifying questions for the user to answer
+    - Do not guess user intent - ask for clarification on ambiguous requirements
+    - Define scope clearly
+  
+  spec:
+    - Follow Behavior-Driven Development (BDD) format
+    - Use Given-When-Then structure for scenarios
+    - Include acceptance criteria
+  
+  design:
+    - Include Mermaid diagrams for complex flows or architectures
+    - Diagrams are optional for simple scenarios
+    - Focus on clarity over completeness
+  
+  tasks:
+    - Each task should be completable in one small commit
+    - Break down large changes into smaller, incremental tasks
+    - Focus on single responsibility per task
