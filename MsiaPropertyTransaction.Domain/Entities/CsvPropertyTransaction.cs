@@ -1,6 +1,4 @@
-using System.Globalization;
-
-namespace MsiaPropertyTransaction.Models;
+namespace MsiaPropertyTransaction.Domain.Entities;
 
 public class CsvPropertyTransaction
 {

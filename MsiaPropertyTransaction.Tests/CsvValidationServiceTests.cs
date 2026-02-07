@@ -1,5 +1,5 @@
 using System.Globalization;
-using MsiaPropertyTransaction.Models;
+using MsiaPropertyTransaction.Domain.Entities;
 using MsiaPropertyTransaction.Services;
 using Xunit;
 

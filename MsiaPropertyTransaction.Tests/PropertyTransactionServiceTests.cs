@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using MsiaPropertyTransaction.Data;
-using MsiaPropertyTransaction.Models;
+using MsiaPropertyTransaction.Domain.Entities;
 using MsiaPropertyTransaction.Services;
 using Xunit;
 

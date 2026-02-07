@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using MsiaPropertyTransaction.Models;
+using MsiaPropertyTransaction.Domain.Entities;
 
 namespace MsiaPropertyTransaction.Data;
 

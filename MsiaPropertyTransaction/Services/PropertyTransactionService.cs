@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using MsiaPropertyTransaction.Data;
-using MsiaPropertyTransaction.Models;
+using MsiaPropertyTransaction.Domain.Entities;
 
 namespace MsiaPropertyTransaction.Services;
 
@@ -35,10 +35,4 @@ public class PropertyTransactionService
 
         return result;
     }
-}
-
-public class InsertResult
-{
-    public int RecordsInserted { get; set; }
-    public List<string> Errors { get; set; } = new();
 }

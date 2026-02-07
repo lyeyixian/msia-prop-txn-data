@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using MsiaPropertyTransaction.Data;
+using MsiaPropertyTransaction.Domain.Entities;
 using MsiaPropertyTransaction.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -62,7 +63,7 @@ app.MapPost("/api/upload-csv", async (HttpContext context, CsvParsingService par
         }
 
         // Validate and convert data
-        var validEntities = new List<MsiaPropertyTransaction.Models.PropertyTransaction>();
+        var validEntities = new List<PropertyTransaction>();
         var validationErrors = new List<string>();
 
         foreach (var csvTransaction in csvTransactions)

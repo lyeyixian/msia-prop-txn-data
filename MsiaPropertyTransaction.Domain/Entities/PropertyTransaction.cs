@@ -1,4 +1,4 @@
-namespace MsiaPropertyTransaction.Models;
+namespace MsiaPropertyTransaction.Domain.Entities;
 
 public class PropertyTransaction
 {
