@@ -1,11 +1,12 @@
 using CsvHelper;
 using CsvHelper.Configuration;
 using System.Globalization;
+using MsiaPropertyTransaction.Application.Interfaces;
 using MsiaPropertyTransaction.Domain.Entities;
 
-namespace MsiaPropertyTransaction.Services;
+namespace MsiaPropertyTransaction.Application.Services;
 
-public class CsvParsingService
+public class CsvParsingService : ICsvParsingService
 {
     public IEnumerable<CsvPropertyTransaction> ParseCsv(Stream csvStream)
     {

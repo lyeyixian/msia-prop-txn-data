@@ -1,5 +1,5 @@
 using System.Text;
-using MsiaPropertyTransaction.Services;
+using MsiaPropertyTransaction.Application.Services;
 using Xunit;
 
 namespace MsiaPropertyTransaction.Tests;

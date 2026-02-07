@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
-using MsiaPropertyTransaction.Data;
+using MsiaPropertyTransaction.Infrastructure.Data;
 
 namespace MsiaPropertyTransaction.Tests;
 

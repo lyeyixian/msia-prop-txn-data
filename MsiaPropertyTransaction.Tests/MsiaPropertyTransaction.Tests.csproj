@@ -20,7 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MsiaPropertyTransaction.Application\MsiaPropertyTransaction.Application.csproj" />
     <ProjectReference Include="..\MsiaPropertyTransaction.Domain\MsiaPropertyTransaction.Domain.csproj" />
+    <ProjectReference Include="..\MsiaPropertyTransaction.Infrastructure\MsiaPropertyTransaction.Infrastructure.csproj" />
     <ProjectReference Include="..\MsiaPropertyTransaction\MsiaPropertyTransaction.csproj" />
   </ItemGroup>
 

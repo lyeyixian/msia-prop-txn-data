@@ -1,6 +1,6 @@
 using System.Globalization;
+using MsiaPropertyTransaction.Application.Services;
 using MsiaPropertyTransaction.Domain.Entities;
-using MsiaPropertyTransaction.Services;
 using Xunit;
 
 namespace MsiaPropertyTransaction.Tests;

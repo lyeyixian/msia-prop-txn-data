@@ -1,9 +1,10 @@
 using System.Globalization;
+using MsiaPropertyTransaction.Application.Interfaces;
 using MsiaPropertyTransaction.Domain.Entities;
 
-namespace MsiaPropertyTransaction.Services;
+namespace MsiaPropertyTransaction.Application.Services;
 
-public class CsvValidationService
+public class CsvValidationService : ICsvValidationService
 {
     public List<string> ValidateCsvTransaction(CsvPropertyTransaction transaction)
     {

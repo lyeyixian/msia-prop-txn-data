@@ -4,7 +4,7 @@ using System.Text;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using MsiaPropertyTransaction.Data;
+using MsiaPropertyTransaction.Infrastructure.Data;
 using Xunit;
 
 namespace MsiaPropertyTransaction.Tests;

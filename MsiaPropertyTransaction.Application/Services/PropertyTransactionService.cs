@@ -1,17 +1,16 @@
-using Microsoft.EntityFrameworkCore;
-using MsiaPropertyTransaction.Data;
+using MsiaPropertyTransaction.Application.Interfaces;
 using MsiaPropertyTransaction.Domain.Entities;
 
-namespace MsiaPropertyTransaction.Services;
+namespace MsiaPropertyTransaction.Application.Services;
 
-public class PropertyTransactionService
+public class PropertyTransactionService : IPropertyTransactionService
 {
-    private readonly AppDbContext _context;
-    private const int BatchSize = 1000; // Process in batches of 1000 records
+    private readonly IPropertyTransactionRepository _repository;
+    private const int BatchSize = 1000;
 
-    public PropertyTransactionService(AppDbContext context)
+    public PropertyTransactionService(IPropertyTransactionRepository repository)
     {
-        _context = context;
+        _repository = repository;
     }
 
     public async Task<InsertResult> InsertTransactionsAsync(IEnumerable<PropertyTransaction> transactions)
@@ -23,8 +22,8 @@ public class PropertyTransactionService
         {
             try
             {
-                await _context.PropertyTransactions.AddRangeAsync(batch);
-                await _context.SaveChangesAsync();
+                await _repository.AddRangeAsync(batch);
+                await _repository.SaveChangesAsync();
                 result.RecordsInserted += batch.Length;
             }
             catch (Exception ex)

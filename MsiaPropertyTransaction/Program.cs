@@ -1,7 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using MsiaPropertyTransaction.Data;
+using MsiaPropertyTransaction.Application.Services;
 using MsiaPropertyTransaction.Domain.Entities;
-using MsiaPropertyTransaction.Services;
+using MsiaPropertyTransaction.Infrastructure.Data;
+using MsiaPropertyTransaction.Infrastructure.Repositories;
+using MsiaPropertyTransaction.Application.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,10 +13,13 @@ builder.Services.AddOpenApi();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+// Register infrastructure services
+builder.Services.AddScoped<IPropertyTransactionRepository, PropertyTransactionRepository>();
+
 // Register application services
-builder.Services.AddScoped<CsvParsingService>();
-builder.Services.AddScoped<CsvValidationService>();
-builder.Services.AddScoped<PropertyTransactionService>();
+builder.Services.AddScoped<ICsvParsingService, CsvParsingService>();
+builder.Services.AddScoped<ICsvValidationService, CsvValidationService>();
+builder.Services.AddScoped<IPropertyTransactionService, PropertyTransactionService>();
 
 var app = builder.Build();
 
@@ -26,7 +31,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapPost("/api/upload-csv", async (HttpContext context, CsvParsingService parsingService, CsvValidationService validationService, PropertyTransactionService transactionService) =>
+app.MapPost("/api/upload-csv", async (HttpContext context, ICsvParsingService parsingService, ICsvValidationService validationService, IPropertyTransactionService transactionService) =>
 {
     try
     {

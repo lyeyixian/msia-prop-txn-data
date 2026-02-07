@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using MsiaPropertyTransaction.Data;
 using MsiaPropertyTransaction.Domain.Entities;
+using MsiaPropertyTransaction.Infrastructure.Data;
 using Xunit;
 
 namespace MsiaPropertyTransaction.Tests;

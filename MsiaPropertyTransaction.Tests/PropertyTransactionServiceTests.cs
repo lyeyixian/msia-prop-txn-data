@@ -1,8 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using MsiaPropertyTransaction.Data;
+using MsiaPropertyTransaction.Application.Services;
 using MsiaPropertyTransaction.Domain.Entities;
-using MsiaPropertyTransaction.Services;
+using MsiaPropertyTransaction.Infrastructure.Data;
+using MsiaPropertyTransaction.Infrastructure.Repositories;
 using Xunit;
 
 namespace MsiaPropertyTransaction.Tests;
@@ -20,7 +21,8 @@ public class PropertyTransactionServiceTests : IDisposable
             .BuildServiceProvider();
 
         _context = serviceProvider.GetRequiredService<AppDbContext>();
-        _service = new PropertyTransactionService(_context);
+        var repository = new PropertyTransactionRepository(_context);
+        _service = new PropertyTransactionService(repository);
 
         // Ensure database is created
         _context.Database.EnsureCreated();

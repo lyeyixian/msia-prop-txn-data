@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using MsiaPropertyTransaction.Domain.Entities;
 
-namespace MsiaPropertyTransaction.Data;
+namespace MsiaPropertyTransaction.Infrastructure.Data;
 
 public class AppDbContext : DbContext
 {
