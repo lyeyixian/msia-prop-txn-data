@@ -22,10 +22,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MsiaPropertyTransaction.Application\MsiaPropertyTransaction.Application.csproj" />
-    <ProjectReference Include="..\MsiaPropertyTransaction.Domain\MsiaPropertyTransaction.Domain.csproj" />
-    <ProjectReference Include="..\MsiaPropertyTransaction.Infrastructure\MsiaPropertyTransaction.Infrastructure.csproj" />
-    <ProjectReference Include="..\MsiaPropertyTransaction\MsiaPropertyTransaction.csproj" />
+    <ProjectReference Include="..\src\MsiaPropertyTransaction.Application\MsiaPropertyTransaction.Application.csproj" />
+    <ProjectReference Include="..\src\MsiaPropertyTransaction.Domain\MsiaPropertyTransaction.Domain.csproj" />
+    <ProjectReference Include="..\src\MsiaPropertyTransaction.Infrastructure\MsiaPropertyTransaction.Infrastructure.csproj" />
+    <ProjectReference Include="..\src\MsiaPropertyTransaction\MsiaPropertyTransaction.csproj" />
   </ItemGroup>
 
 </Project>
