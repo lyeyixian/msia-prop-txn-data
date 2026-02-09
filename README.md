@@ -23,7 +23,7 @@ This starts:
 ### 2. Run the Application
 
 ```bash
-cd MsiaPropertyTransaction
+cd src/MsiaPropertyTransaction
 dotnet run
 ```
 
@@ -282,19 +282,20 @@ curl -X POST https://api.example.com/api/process-s3-csv \
 
 ```
 .
-├── MsiaPropertyTransaction/              # Web API project
-│   ├── Settings/                         # Configuration classes
-│   ├── Program.cs                        # App entry point
-│   └── appsettings*.json                 # Configuration files
-├── MsiaPropertyTransaction.Application/  # Business logic
-│   ├── Interfaces/                       # Service interfaces
-│   ├── Services/                         # Business services
-│   └── Settings/                         # Settings classes
-├── MsiaPropertyTransaction.Domain/       # Domain models
-├── MsiaPropertyTransaction.Infrastructure/# Data access & external services
-│   ├── Services/                         # S3 storage service
-│   └── Validation/                       # Configuration validators
-├── MsiaPropertyTransaction.Tests/        # Unit & integration tests
-├── docker-compose.yml                    # Local infrastructure
-└── test-data/                            # Sample CSV files
+├── src/
+│   ├── MsiaPropertyTransaction/              # Web API project
+│   │   ├── Settings/                         # Configuration classes
+│   │   ├── Program.cs                        # App entry point
+│   │   └── appsettings*.json                 # Configuration files
+│   ├── MsiaPropertyTransaction.Application/  # Business logic
+│   │   ├── Interfaces/                       # Service interfaces
+│   │   ├── Services/                         # Business services
+│   │   └── Settings/                         # Settings classes
+│   ├── MsiaPropertyTransaction.Domain/       # Domain models
+│   └── MsiaPropertyTransaction.Infrastructure/# Data access & external services
+│       ├── Services/                         # S3 storage service
+│       └── Validation/                       # Configuration validators
+├── MsiaPropertyTransaction.Tests/            # Unit & integration tests
+├── docker-compose.yml                        # Local infrastructure
+└── test-data/                                # Sample CSV files
 ```
