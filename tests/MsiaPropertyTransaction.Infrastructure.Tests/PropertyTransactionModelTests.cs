@@ -3,7 +3,7 @@ using MsiaPropertyTransaction.Domain.Entities;
 using MsiaPropertyTransaction.Infrastructure.Data;
 using Xunit;
 
-namespace MsiaPropertyTransaction.Tests;
+namespace MsiaPropertyTransaction.Infrastructure.Tests;
 
 public class PropertyTransactionModelTests
 {

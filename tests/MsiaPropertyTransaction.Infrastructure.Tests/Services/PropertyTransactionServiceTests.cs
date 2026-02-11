@@ -6,7 +6,7 @@ using MsiaPropertyTransaction.Infrastructure.Data;
 using MsiaPropertyTransaction.Infrastructure.Repositories;
 using Xunit;
 
-namespace MsiaPropertyTransaction.Tests;
+namespace MsiaPropertyTransaction.Infrastructure.Tests;
 
 public class PropertyTransactionServiceTests : IDisposable
 {

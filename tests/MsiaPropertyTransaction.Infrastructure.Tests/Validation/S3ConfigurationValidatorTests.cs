@@ -2,7 +2,7 @@ using MsiaPropertyTransaction.Application.Settings;
 using MsiaPropertyTransaction.Infrastructure.Validation;
 using Xunit;
 
-namespace MsiaPropertyTransaction.Tests;
+namespace MsiaPropertyTransaction.Infrastructure.Tests;
 
 public class S3ConfigurationValidatorTests
 {

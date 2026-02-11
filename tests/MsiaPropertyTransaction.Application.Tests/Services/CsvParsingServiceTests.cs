@@ -2,7 +2,7 @@ using System.Text;
 using MsiaPropertyTransaction.Application.Services;
 using Xunit;
 
-namespace MsiaPropertyTransaction.Tests;
+namespace MsiaPropertyTransaction.Application.Tests;
 
 public class CsvParsingServiceTests
 {

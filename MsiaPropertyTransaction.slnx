@@ -1,7 +1,14 @@
 <Solution>
-  <Project Path="src/MsiaPropertyTransaction/MsiaPropertyTransaction.csproj" />
-  <Project Path="src/MsiaPropertyTransaction.Application/MsiaPropertyTransaction.Application.csproj" />
-  <Project Path="src/MsiaPropertyTransaction.Domain/MsiaPropertyTransaction.Domain.csproj" />
-  <Project Path="src/MsiaPropertyTransaction.Infrastructure/MsiaPropertyTransaction.Infrastructure.csproj" />
-  <Project Path="tests/MsiaPropertyTransaction.Tests/MsiaPropertyTransaction.Tests.csproj" />
+  <Folder Name="/src/">
+    <Project Path="src/MsiaPropertyTransaction/MsiaPropertyTransaction.csproj" />
+    <Project Path="src/MsiaPropertyTransaction.Application/MsiaPropertyTransaction.Application.csproj" />
+    <Project Path="src/MsiaPropertyTransaction.Domain/MsiaPropertyTransaction.Domain.csproj" />
+    <Project Path="src/MsiaPropertyTransaction.Infrastructure/MsiaPropertyTransaction.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/MsiaPropertyTransaction.Application.Tests/MsiaPropertyTransaction.Application.Tests.csproj" />
+    <Project Path="tests/MsiaPropertyTransaction.Domain.Tests/MsiaPropertyTransaction.Domain.Tests.csproj" />
+    <Project Path="tests/MsiaPropertyTransaction.Infrastructure.Tests/MsiaPropertyTransaction.Infrastructure.Tests.csproj" />
+    <Project Path="tests/MsiaPropertyTransaction.Tests/MsiaPropertyTransaction.Tests.csproj" />
+  </Folder>
 </Solution>

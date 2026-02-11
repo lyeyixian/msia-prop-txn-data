@@ -1,7 +1,7 @@
 using MsiaPropertyTransaction.Application.Services;
 using Xunit;
 
-namespace MsiaPropertyTransaction.Tests;
+namespace MsiaPropertyTransaction.Infrastructure.Tests;
 
 public class S3PathValidationTests
 {

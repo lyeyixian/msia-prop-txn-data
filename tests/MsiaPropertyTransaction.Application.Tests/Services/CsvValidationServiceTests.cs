@@ -3,7 +3,7 @@ using MsiaPropertyTransaction.Application.Services;
 using MsiaPropertyTransaction.Domain.Entities;
 using Xunit;
 
-namespace MsiaPropertyTransaction.Tests;
+namespace MsiaPropertyTransaction.Application.Tests;
 
 public class CsvValidationServiceTests
 {
