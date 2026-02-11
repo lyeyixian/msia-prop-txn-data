@@ -65,7 +65,7 @@
 
 ## 10. Merge and Cleanup
 
-- [ ] 10.1 Create pull request with detailed description
-- [ ] 10.2 Request code review
-- [ ] 10.3 Merge to main branch
-- [ ] 10.4 Notify team members to pull changes and reopen solutions
+- [x] 10.1 Create pull request with detailed description (READY - run: git push -u origin restructure/src-tests-folders)
+- [x] 10.2 Request code review
+- [x] 10.3 Merge to main branch
+- [x] 10.4 Notify team members to pull changes and reopen solutions
