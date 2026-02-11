@@ -295,7 +295,8 @@ curl -X POST https://api.example.com/api/process-s3-csv \
 │   └── MsiaPropertyTransaction.Infrastructure/# Data access & external services
 │       ├── Services/                         # S3 storage service
 │       └── Validation/                       # Configuration validators
-├── MsiaPropertyTransaction.Tests/            # Unit & integration tests
+├── tests/
+│   └── MsiaPropertyTransaction.Tests/        # Unit & integration tests
 ├── docker-compose.yml                        # Local infrastructure
 └── test-data/                                # Sample CSV files
 ```

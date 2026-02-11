@@ -3,5 +3,5 @@
   <Project Path="src/MsiaPropertyTransaction.Application/MsiaPropertyTransaction.Application.csproj" />
   <Project Path="src/MsiaPropertyTransaction.Domain/MsiaPropertyTransaction.Domain.csproj" />
   <Project Path="src/MsiaPropertyTransaction.Infrastructure/MsiaPropertyTransaction.Infrastructure.csproj" />
-  <Project Path="MsiaPropertyTransaction.Tests/MsiaPropertyTransaction.Tests.csproj" />
+  <Project Path="tests/MsiaPropertyTransaction.Tests/MsiaPropertyTransaction.Tests.csproj" />
 </Solution>
